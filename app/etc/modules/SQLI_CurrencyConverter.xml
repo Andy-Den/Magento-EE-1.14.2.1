@@ -1,0 +1,17 @@
+<?xml version="1.0"?>
+<!--
+/**
+ * @category    SQLI
+ * @package     SQLI_CurrencyConverter
+ * @copyright Copyright (c) 2016-2017 SQLI, Inc. (http://www.sqli.com)
+ * @license GNU GPL
+ */
+-->
+<config>
+    <modules>
+        <SQLI_CurrencyConverter>
+            <active>true</active>
+            <codePool>local</codePool>
+        </SQLI_CurrencyConverter>
+    </modules>
+</config>

@@ -1,0 +1,22 @@
+<?xml version="1.0"?>
+<!--
+/**
+ * Custom SQLI AMT Theme
+ *
+ * @category   design
+ * @package    sqli_amt
+ * @author     Abderrahmane MEJDOUBI <amejdoubi@sqli.com>
+ */
+-->
+<layout version="0.1.0">
+    <default>
+        <reference name="content">
+        </reference>
+    </default>
+
+    <currencyconverter_converter_index>
+        <reference name="content">
+            <block type="currencyconverter/conversion_list" name="conversion_list" template="currencyconverter/list.phtml" />
+        </reference>
+    </currencyconverter_converter_index>
+</layout>

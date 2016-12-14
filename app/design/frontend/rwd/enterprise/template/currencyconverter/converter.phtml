@@ -1,0 +1,104 @@
+<div class="page-title">
+    <h1><?php echo Mage::helper('currencyconverter')->__('Currency Converter') ?></h1>
+</div>
+<form action="<?php echo $this->getFormAction(); ?>" id="converterForm" method="post" class="scaffold-form">
+    <div class="fieldset">
+        <p class="required"><?php echo Mage::helper('contacts')->__('* Required Fields') ?></p>
+        <ul class="form-list">
+            <li class="fields">
+                <div class="field">
+                    <label for="currency_from" class="required"><em>*</em><?php echo Mage::helper('currencyconverter')->__('From') ?></label>
+                    <div class="input-box">
+                        <select name="currency_from" id="currency_from" title="<?php echo Mage::helper('core')->quoteEscape(Mage::helper('currencyconverter')->__('From')) ?>" class="validate-select required-entry">
+                            <option value=""><?php echo Mage::helper('currencyconverter')->__('Select currency') ?></option>
+                            <option value="AUD">Australia Dollars – AUD</option>
+                            <option value="BRL">Brazil Reais – BRL</option>
+                            <option value="CAD">Canada Dollars – CAD</option>
+                            <option value="CNY">China Yuan Renminbi – CNY</option>
+                            <option value="HRK">Croatia Kuna – HRK</option>
+                            <option value="CZK">Czech Republic Koruny – CZK</option>
+                            <option value="DKK">Denmark Kroner – DKK</option>
+                            <option value="EUR">Euro – EUR</option>
+                            <option value="HKD">Hong Kong Dollars – HKD</option>
+                            <option value="HUF">Hungary Forint – HUF</option>
+                            <option value="INR">India Rupees – INR</option>
+                            <option value="IDR">Indonesia Rupiahs – IDR</option>
+                            <option value="ILS">Israel New Shekels – ILS</option>
+                            <option value="JPY">Japan Yen – JPY</option>
+                            <option value="KRW">Korea (South) Won – KRW</option>
+                            <option value="MYR">Malaysia Ringgits – MYR</option>
+                            <option value="MXN">Mexico Pesos – MXN</option>
+                            <option value="NZD">New Zealand Dollars – NZD</option>
+                            <option value="NOK">Norway Kroner – NOK</option>
+                            <option value="PHP">Philippines Pesos – PHP</option>
+                            <option value="PLN">Poland Zlotych – PLN</option>
+                            <option value="RON">Romania New Lei – RON</option>
+                            <option value="RUB">Russia Rubles – RUB</option>
+                            <option value="SGD">Singapore Dollars – SGD</option>
+                            <option value="ZAR">South Africa Rand – ZAR</option>
+                            <option value="SEK">Sweden Kronor – SEK</option>
+                            <option value="CHF">Switzerland Francs – CHF</option>
+                            <option value="THB">Thailand Baht – THB</option>
+                            <option value="TRY">Turkey New Lira – TRY</option>
+                            <option value="GBP">United Kingdom Pounds – GBP</option>
+                            <option value="USD">United States Dollars – USD</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="field">
+                    <label for="currency_to" class="required"><em>*</em><?php echo Mage::helper('currencyconverter')->__('To') ?></label>
+                    <div class="input-box">
+                        <select name="currency_to" id="currency_to" title="<?php echo Mage::helper('core')->quoteEscape(Mage::helper('currencyconverter')->__('To')) ?>" class="validate-select required-entry">
+                            <option value=""><?php echo Mage::helper('currencyconverter')->__('Select currency') ?></option>
+                            <option value="AUD">Australia Dollars – AUD</option>
+                            <option value="BRL">Brazil Reais – BRL</option>
+                            <option value="CAD">Canada Dollars – CAD</option>
+                            <option value="CNY">China Yuan Renminbi – CNY</option>
+                            <option value="HRK">Croatia Kuna – HRK</option>
+                            <option value="CZK">Czech Republic Koruny – CZK</option>
+                            <option value="DKK">Denmark Kroner – DKK</option>
+                            <option value="EUR">Euro – EUR</option>
+                            <option value="HKD">Hong Kong Dollars – HKD</option>
+                            <option value="HUF">Hungary Forint – HUF</option>
+                            <option value="INR">India Rupees – INR</option>
+                            <option value="IDR">Indonesia Rupiahs – IDR</option>
+                            <option value="ILS">Israel New Shekels – ILS</option>
+                            <option value="JPY">Japan Yen – JPY</option>
+                            <option value="KRW">Korea (South) Won – KRW</option>
+                            <option value="MYR">Malaysia Ringgits – MYR</option>
+                            <option value="MXN">Mexico Pesos – MXN</option>
+                            <option value="NZD">New Zealand Dollars – NZD</option>
+                            <option value="NOK">Norway Kroner – NOK</option>
+                            <option value="PHP">Philippines Pesos – PHP</option>
+                            <option value="PLN">Poland Zlotych – PLN</option>
+                            <option value="RON">Romania New Lei – RON</option>
+                            <option value="RUB">Russia Rubles – RUB</option>
+                            <option value="SGD">Singapore Dollars – SGD</option>
+                            <option value="ZAR">South Africa Rand – ZAR</option>
+                            <option value="SEK">Sweden Kronor – SEK</option>
+                            <option value="CHF">Switzerland Francs – CHF</option>
+                            <option value="THB">Thailand Baht – THB</option>
+                            <option value="TRY">Turkey New Lira – TRY</option>
+                            <option value="GBP">United Kingdom Pounds – GBP</option>
+                            <option value="USD">United States Dollars – USD</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="field">
+                    <label for="amount" class="required"><em>*</em><?php echo Mage::helper('currencyconverter')->__('Amount') ?></label>
+                    <div class="input-box">
+                        <input name="amount" id="amount" title="<?php echo Mage::helper('core')->quoteEscape(Mage::helper('currencyconverter')->__('Amount')) ?>" class="input-text validate-number required-entry" type="text" />
+                    </div>
+                </div>
+            </li>
+        </ul>
+    </div>
+    <div class="buttons-set">
+        <button type="submit" title="<?php echo Mage::helper('core')->quoteEscape(Mage::helper('currencyconverter')->__('Convert')) ?>" class="button"><span><span><?php echo Mage::helper('currencyconverter')->__('Convert') ?></span></span></button>
+    </div>
+</form>
+<script type="text/javascript">
+    <![CDATA[
+     var contactForm = new VarienForm('converterForm', true);
+    ]]>
+</script>

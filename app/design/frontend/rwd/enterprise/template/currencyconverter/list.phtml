@@ -1,0 +1,16 @@
+<div class="page-title">
+    <h1><?php echo Mage::helper('currencyconverter')->__('Currency Converter') ?></h1>
+</div>
+
+<?php
+/** @var $this SQLI_CurrencyConverter_Block_List */
+?>
+
+<table border="1">
+    <tr>
+        <th>Currency From</th>
+        <th>Currency To</th>
+        <th>Amount to convert</th>
+    </tr>
+    <?php echo $this->listOfConversion(); ?>
+</table>

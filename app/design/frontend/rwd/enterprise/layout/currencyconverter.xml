@@ -1,0 +1,30 @@
+<?xml version="1.0"?>
+<!--
+/**
+ * Custom SQLI AMT Theme
+ *
+ * @category   design
+ * @package    sqli_amt
+ * @author     Abderrahmane MEJDOUBI <amejdoubi@sqli.com>
+ */
+-->
+<layout version="0.1.0">
+    <default>
+        <reference name="root">
+            <action method="setTemplate"><template>page/2columns-right.phtml</template></action>
+        </reference>
+        <reference name="content"></reference>
+    </default>
+
+    <currencyconverter_converter_index>
+        <reference name="content">
+            <block type="currencyconverter/converter" name="currency_converter" template="currencyconverter/converter.phtml" />
+        </reference>
+    </currencyconverter_converter_index>
+
+    <currencyconverter_converter_list>
+        <reference name="content">
+            <block type="currencyconverter/list" name="conversion_list" template="currencyconverter/list.phtml" />
+        </reference>
+    </currencyconverter_converter_list>
+</layout>
