@@ -3535,8 +3535,8 @@ INSERT INTO `core_config_data` (`config_id`, `scope`, `scope_id`, `path`, `value
 (7, 'default', 0, 'payment/hosted_pro/mobile_optimized', '1'),
 (8, 'default', 0, 'web/seo/use_rewrites', '1'),
 (9, 'default', 0, 'admin/dashboard/enable_charts', '1'),
-(10, 'default', 0, 'web/unsecure/base_url', 'http://localhost/FomationMagento1/'),
-(11, 'default', 0, 'web/secure/base_url', 'http://localhost/FomationMagento1/'),
+(10, 'default', 0, 'web/unsecure/base_url', 'http://localhost/FormationMagento1/'),
+(11, 'default', 0, 'web/secure/base_url', 'http://localhost/FormationMagento1/'),
 (12, 'default', 0, 'general/locale/code', 'en_US'),
 (13, 'default', 0, 'general/locale/timezone', 'America/Los_Angeles'),
 (14, 'default', 0, 'currency/options/base', 'USD'),
@@ -9894,7 +9894,7 @@ CREATE TABLE IF NOT EXISTS `log_visitor_info` (
 --
 
 INSERT INTO `log_visitor_info` (`visitor_id`, `http_referer`, `http_user_agent`, `http_accept_charset`, `http_accept_language`, `server_addr`, `remote_addr`) VALUES
-(1, 'http://localhost/FomationMagento1/index.php/install/wizard/end/', 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/54.0.2840.99 Safari/537.36', NULL, 'fr-FR,fr;q=0.8,en-US;q=0.6,en;q=0.4,ar;q=0.2,nl;q=0.2,nb;q=0.2,de;q=0.2,st;q=0.2', '\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0', '\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0'),
+(1, 'http://localhost/FormationMagento1/index.php/install/wizard/end/', 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/54.0.2840.99 Safari/537.36', NULL, 'fr-FR,fr;q=0.8,en-US;q=0.6,en;q=0.4,ar;q=0.2,nl;q=0.2,nb;q=0.2,de;q=0.2,st;q=0.2', '\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0', '\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0'),
 (2, NULL, 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/54.0.2840.99 Safari/537.36', NULL, 'fr-FR,fr;q=0.8,en-US;q=0.6,en;q=0.4,ar;q=0.2,nl;q=0.2,nb;q=0.2,de;q=0.2,st;q=0.2', '\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0', '\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0'),
 (3, NULL, 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/54.0.2840.99 Safari/537.36', NULL, 'fr-FR,fr;q=0.8,en-US;q=0.6,en;q=0.4,ar;q=0.2,nl;q=0.2,nb;q=0.2,de;q=0.2,st;q=0.2', '\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0', '\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0'),
 (4, NULL, 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/54.0.2840.99 Safari/537.36', NULL, 'fr-FR,fr;q=0.8,en-US;q=0.6,en;q=0.4,ar;q=0.2,nl;q=0.2,nb;q=0.2,de;q=0.2,st;q=0.2', '\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0', '\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0'),
