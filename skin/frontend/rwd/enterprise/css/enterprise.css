@@ -1058,8 +1058,3 @@ body.customer-account .storecredit .data-table td.last {
 .container-closed:after {
   border-top-color: #777777;
 }
-
-
-#converterForm .buttons-set {
-  width: 365px;
-}

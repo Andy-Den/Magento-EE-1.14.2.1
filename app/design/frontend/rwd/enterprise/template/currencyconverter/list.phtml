@@ -6,11 +6,13 @@
 /** @var $this SQLI_CurrencyConverter_Block_List */
 ?>
 
-<table border="1">
+<table class="cc-list">
     <tr>
         <th>Currency From</th>
         <th>Currency To</th>
         <th>Amount to convert</th>
+        <th>Rate of conversion</th>
+        <th>Result of conversion</th>
     </tr>
     <?php echo $this->listOfConversion(); ?>
 </table>

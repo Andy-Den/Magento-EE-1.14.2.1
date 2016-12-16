@@ -11,7 +11,6 @@ class SQLI_CurrencyConverter_Model_Resource_Conversion_Collection extends Mage_C
 {
     public function _construct()
     {
-//        parent::_construct();
         $this->_init('currencyconverter/conversion');
     }
 }

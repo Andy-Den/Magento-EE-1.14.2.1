@@ -1,10 +1,15 @@
+<?php
+
+/** @var $this SQLI_CurrencyConverter_Block_Converter */
+
+?>
+
 <div class="page-title">
     <h1><?php echo Mage::helper('currencyconverter')->__('Currency Converter') ?></h1>
 </div>
-<form action="<?php echo $this->getFormAction(); ?>" id="converterForm" method="post" class="scaffold-form">
+<form action="<?php echo $this->getConverterFormAction(); ?>" id="converterForm" method="post" class="scaffold-form">
     <div class="fieldset">
-        <p class="required"><?php echo Mage::helper('contacts')->__('* Required Fields') ?></p>
-        <ul class="form-list">
+        <ul class="form-list left">
             <li class="fields">
                 <div class="field">
                     <label for="currency_from" class="required"><em>*</em><?php echo Mage::helper('currencyconverter')->__('From') ?></label>
@@ -18,7 +23,7 @@
                             <option value="HRK">Croatia Kuna – HRK</option>
                             <option value="CZK">Czech Republic Koruny – CZK</option>
                             <option value="DKK">Denmark Kroner – DKK</option>
-                            <option value="EUR">Euro – EUR</option>
+                            <option value="">Euro – EUR</option>
                             <option value="HKD">Hong Kong Dollars – HKD</option>
                             <option value="HUF">Hungary Forint – HUF</option>
                             <option value="INR">India Rupees – INR</option>
@@ -57,7 +62,7 @@
                             <option value="HRK">Croatia Kuna – HRK</option>
                             <option value="CZK">Czech Republic Koruny – CZK</option>
                             <option value="DKK">Denmark Kroner – DKK</option>
-                            <option value="EUR">Euro – EUR</option>
+                            <option value="">Euro – EUR</option>
                             <option value="HKD">Hong Kong Dollars – HKD</option>
                             <option value="HUF">Hungary Forint – HUF</option>
                             <option value="INR">India Rupees – INR</option>
@@ -92,13 +97,15 @@
                 </div>
             </li>
         </ul>
+        <div id="cc-result" class="left">
+            <h2>Result of conversion</h2>
+            <img class="loader" src="<?php echo $this->getSkinUrl(); ?>images/loader.gif" alt="loader">
+            <p class="cc-rate">Rate: 1 USD = 1.000 EUR</p>
+            <p class="cc-conversion">10.000 <span>USD</span> = 50.000 <span>EUR</span></p>
+        </div>
     </div>
     <div class="buttons-set">
-        <button type="submit" title="<?php echo Mage::helper('core')->quoteEscape(Mage::helper('currencyconverter')->__('Convert')) ?>" class="button"><span><span><?php echo Mage::helper('currencyconverter')->__('Convert') ?></span></span></button>
+        <button type="submit" title="<?php echo Mage::helper('core')->quoteEscape(Mage::helper('currencyconverter')->__('Convert')) ?>" class="button"><span><?php echo Mage::helper('currencyconverter')->__('Convert') ?></span></button>
+        <p class="required"><?php echo Mage::helper('contacts')->__('* Required Fields') ?></p>
     </div>
 </form>
-<script type="text/javascript">
-    <![CDATA[
-     var contactForm = new VarienForm('converterForm', true);
-    ]]>
-</script>

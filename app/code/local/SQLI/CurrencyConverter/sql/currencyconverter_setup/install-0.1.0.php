@@ -26,7 +26,10 @@ $table = $installer->getConnection()
     ), 'Currency To')
     ->addColumn('amount', Varien_Db_Ddl_Table::TYPE_FLOAT, array(
         'nullable'  => false,
-    ), 'Amount to convert');
+    ), 'Amount to convert')
+    ->addColumn('rate', Varien_Db_Ddl_Table::TYPE_FLOAT, array(
+        'nullable'  => false,
+    ), 'Rate of conversion');
 
 $installer->getConnection()->createTable($table);
 
